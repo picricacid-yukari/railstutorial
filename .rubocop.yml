@@ -1,0 +1,8 @@
+AllCops:
+  TargetRubyVersion: 2.4
+
+# 日本語でのコメントを許可
+AsciiComments:
+  Enabled:           false
+
+require:             rubocop-performance
