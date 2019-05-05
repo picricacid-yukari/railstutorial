@@ -7,7 +7,7 @@ $gray-medium-light: #eaeaea;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* universal */
+//universal
 body {
   padding-top: 60px;
 }
@@ -27,7 +27,8 @@ textarea {
     margin-bottom: 10px;
   }
 }
-/* typography */
+
+// typography
 h1,
 h2,
 h3,
@@ -57,7 +58,7 @@ p {
   font-size: 1.1em;
   line-height: 1.7em;
 }
-/* header */
+// header
 #logo {
   float: left;
   margin-right: 10px;
@@ -73,7 +74,7 @@ p {
     text-decoration: none;
   }
 }
-/* footer */
+// footer
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -102,7 +103,7 @@ footer {
     }
   }
 }
-/* miscellaneous */
+// miscellaneous
 .debug_dump {
   clear: both;
   float: left;
@@ -110,7 +111,7 @@ footer {
   margin-top: 45px;
   @include box_sizing;
 }
-/* sidebar */
+// sidebar
 aside {
   section.user_info {
     margin-top: 20px;
@@ -149,7 +150,52 @@ aside {
 .gravatar_edit {
   margin-top: 15px;
 }
-/* forms */
+
+.stats {
+  overflow: auto;
+  margin-top: 0;
+  padding: 0;
+
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $gray-lighter;
+    color: gray;
+
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+
+    &:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+
+  .gravatar {
+    margin: 1px;
+  }
+
+  a {
+    padding: 0;
+  }
+}
+
+.users.follow {
+  padding: 0;
+}
+
+// forms
 .uneditable-input,
 input,
 select,
@@ -195,7 +241,8 @@ input {
   width: auto;
   margin-left: 0;
 }
-/* Users index */
+// Users index
+
 .users {
   list-style: none;
   margin: 0;
@@ -206,7 +253,6 @@ input {
     border-bottom: 1px solid $gray-lighter;
   }
 }
-
 // microposts
 .microposts {
   list-style: none;
